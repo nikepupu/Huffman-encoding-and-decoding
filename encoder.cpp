@@ -1,5 +1,3 @@
-//  Author: Sean Davis
-
 #include "encoder.h"
 #include <iostream>
 

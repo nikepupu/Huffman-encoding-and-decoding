@@ -1,4 +1,3 @@
-
 #include "decoder.h"
 #include <iostream>
 #include <cstring>
