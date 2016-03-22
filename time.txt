@@ -1,0 +1,434 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 64.32      0.09     0.09        1    90.05    90.05  Decoder::decode(unsigned char const*, int, unsigned char*, int*)
+ 21.44      0.12     0.03  1144694     0.00     0.00  Encoder::add(unsigned int*, unsigned char*, unsigned int&, int&, int&)
+ 14.29      0.14     0.02        1    20.01    50.03  Encoder::encode(unsigned char const*, int, unsigned char*, int*)
+  0.00      0.14     0.00  1144694     0.00     0.00  Huffman::increaseFrequency()
+  0.00      0.14     0.00    18309     0.00     0.00  Vector<Tries*>::operator[](int)
+  0.00      0.14     0.00    18309     0.00     0.00  Vector<Huffman*>::operator[](int)
+  0.00      0.14     0.00     4995     0.00     0.00  Huffman::check(int)
+  0.00      0.14     0.00      970     0.00     0.00  BinaryHeap<Tries*>::isEmpty() const
+  0.00      0.14     0.00      970     0.00     0.00  BinaryHeap<Huffman*>::isEmpty() const
+  0.00      0.14     0.00      486     0.00     0.00  BinaryHeap<Tries*>::findMin() const
+  0.00      0.14     0.00      486     0.00     0.00  BinaryHeap<Huffman*>::findMin() const
+  0.00      0.14     0.00      486     0.00     0.00  Vector<Tries*>::operator[](int) const
+  0.00      0.14     0.00      486     0.00     0.00  Vector<Huffman*>::operator[](int) const
+  0.00      0.14     0.00      485     0.00     0.00  BinaryHeap<Tries*>::insert(Tries* const&)
+  0.00      0.14     0.00      485     0.00     0.00  BinaryHeap<Huffman*>::insert(Huffman* const&)
+  0.00      0.14     0.00      485     0.00     0.00  BinaryHeap<Tries*>::isFull() const
+  0.00      0.14     0.00      485     0.00     0.00  BinaryHeap<Huffman*>::isFull() const
+  0.00      0.14     0.00      485     0.00     0.00  Vector<Tries*>::size() const
+  0.00      0.14     0.00      485     0.00     0.00  Vector<Huffman*>::size() const
+  0.00      0.14     0.00      484     0.00     0.00  BinaryHeap<Tries*>::percolateDown(int)
+  0.00      0.14     0.00      484     0.00     0.00  BinaryHeap<Tries*>::deleteMin()
+  0.00      0.14     0.00      484     0.00     0.00  BinaryHeap<Huffman*>::percolateDown(int)
+  0.00      0.14     0.00      484     0.00     0.00  BinaryHeap<Huffman*>::deleteMin()
+  0.00      0.14     0.00      256     0.00     0.00  Tries::Tries(int, int, Tries*, Tries*)
+  0.00      0.14     0.00      256     0.00     0.00  Huffman::getCode(int, unsigned int*)
+  0.00      0.14     0.00      256     0.00     0.00  Huffman::Huffman(int, int, Huffman*, Huffman*)
+  0.00      0.14     0.00      230     0.00     0.00  BinaryHeap<Tries*>::getSize()
+  0.00      0.14     0.00      230     0.00     0.00  BinaryHeap<Huffman*>::getSize()
+  0.00      0.14     0.00      229     0.00     0.00  Tries::Tries(Tries*, Tries*)
+  0.00      0.14     0.00      229     0.00     0.00  Huffman::Huffman(Huffman*, Huffman*)
+  0.00      0.14     0.00        2     0.00     0.00  std::operator&(std::_Ios_Fmtflags, std::_Ios_Fmtflags)
+  0.00      0.14     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN7DecoderC2Ev
+  0.00      0.14     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN7EncoderC2Ev
+  0.00      0.14     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN8CPUTimerC2Ev
+  0.00      0.14     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.14     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.14     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.14     0.00        1     0.00     0.00  BinaryHeap<Tries*>::BinaryHeap(int)
+  0.00      0.14     0.00        1     0.00     0.00  BinaryHeap<Tries*>::~BinaryHeap()
+  0.00      0.14     0.00        1     0.00     0.00  BinaryHeap<Huffman*>::BinaryHeap(int)
+  0.00      0.14     0.00        1     0.00     0.00  BinaryHeap<Huffman*>::~BinaryHeap()
+  0.00      0.14     0.00        1     0.00     0.00  Vector<Tries*>::Vector(int)
+  0.00      0.14     0.00        1     0.00     0.00  Vector<Tries*>::~Vector()
+  0.00      0.14     0.00        1     0.00     0.00  Vector<Huffman*>::Vector(int)
+  0.00      0.14     0.00        1     0.00     0.00  Vector<Huffman*>::~Vector()
+  0.00      0.14     0.00        1     0.00     0.00  Decoder::Decoder()
+  0.00      0.14     0.00        1     0.00     0.00  Encoder::Encoder()
+  0.00      0.14     0.00        1     0.00     0.00  Encoder::~Encoder()
+  0.00      0.14     0.00        1     0.00     0.00  CPUTimer::cur_CPUTime()
+  0.00      0.14     0.00        1     0.00     0.00  CPUTimer::CPUTimer()
+  0.00      0.14     0.00        1     0.00     0.00  std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags)
+  0.00      0.14     0.00        1     0.00     0.00  std::operator&=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags)
+  0.00      0.14     0.00        1     0.00     0.00  std::operator~(std::_Ios_Fmtflags)
+  0.00      0.14     0.00        1     0.00     0.00  std::operator|=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags)
+  0.00      0.14     0.00        1     0.00     0.00  std::operator|(std::_Ios_Fmtflags, std::_Ios_Fmtflags)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 7.14% of 0.14 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00    0.14                 main [1]
+                0.09    0.00       1/1           Decoder::decode(unsigned char const*, int, unsigned char*, int*) [2]
+                0.02    0.03       1/1           Encoder::encode(unsigned char const*, int, unsigned char*, int*) [3]
+                0.00    0.00       1/1           CPUTimer::CPUTimer() [58]
+                0.00    0.00       1/1           Encoder::Encoder() [55]
+                0.00    0.00       1/1           Encoder::~Encoder() [56]
+                0.00    0.00       1/1           Decoder::Decoder() [54]
+                0.00    0.00       1/1           CPUTimer::cur_CPUTime() [57]
+-----------------------------------------------
+                0.09    0.00       1/1           main [1]
+[2]     64.3    0.09    0.00       1         Decoder::decode(unsigned char const*, int, unsigned char*, int*) [2]
+                0.00    0.00     486/486         BinaryHeap<Tries*>::findMin() const [18]
+                0.00    0.00     485/485         BinaryHeap<Tries*>::insert(Tries* const&) [22]
+                0.00    0.00     484/484         BinaryHeap<Tries*>::deleteMin() [29]
+                0.00    0.00     256/256         Tries::Tries(int, int, Tries*, Tries*) [32]
+                0.00    0.00     230/230         BinaryHeap<Tries*>::getSize() [35]
+                0.00    0.00     229/229         Tries::Tries(Tries*, Tries*) [37]
+                0.00    0.00       1/1           BinaryHeap<Tries*>::BinaryHeap(int) [46]
+                0.00    0.00       1/1           BinaryHeap<Tries*>::~BinaryHeap() [47]
+-----------------------------------------------
+                0.02    0.03       1/1           main [1]
+[3]     35.7    0.02    0.03       1         Encoder::encode(unsigned char const*, int, unsigned char*, int*) [3]
+                0.03    0.00 1144694/1144694     Encoder::add(unsigned int*, unsigned char*, unsigned int&, int&, int&) [4]
+                0.00    0.00 1144694/1144694     Huffman::increaseFrequency() [12]
+                0.00    0.00     486/486         BinaryHeap<Huffman*>::findMin() const [19]
+                0.00    0.00     485/485         BinaryHeap<Huffman*>::insert(Huffman* const&) [23]
+                0.00    0.00     484/484         BinaryHeap<Huffman*>::deleteMin() [31]
+                0.00    0.00     256/256         Huffman::Huffman(int, int, Huffman*, Huffman*) [34]
+                0.00    0.00     256/256         Huffman::getCode(int, unsigned int*) [33]
+                0.00    0.00     230/230         BinaryHeap<Huffman*>::getSize() [36]
+                0.00    0.00     229/229         Huffman::Huffman(Huffman*, Huffman*) [38]
+                0.00    0.00       1/1           BinaryHeap<Huffman*>::BinaryHeap(int) [48]
+                0.00    0.00       1/1           BinaryHeap<Huffman*>::~BinaryHeap() [49]
+-----------------------------------------------
+                0.03    0.00 1144694/1144694     Encoder::encode(unsigned char const*, int, unsigned char*, int*) [3]
+[4]     21.4    0.03    0.00 1144694         Encoder::add(unsigned int*, unsigned char*, unsigned int&, int&, int&) [4]
+-----------------------------------------------
+                0.00    0.00 1144694/1144694     Encoder::encode(unsigned char const*, int, unsigned char*, int*) [3]
+[12]     0.0    0.00    0.00 1144694         Huffman::increaseFrequency() [12]
+-----------------------------------------------
+                0.00    0.00     968/18309       BinaryHeap<Tries*>::deleteMin() [29]
+                0.00    0.00    3745/18309       BinaryHeap<Tries*>::insert(Tries* const&) [22]
+                0.00    0.00   13596/18309       BinaryHeap<Tries*>::percolateDown(int) [28]
+[13]     0.0    0.00    0.00   18309         Vector<Tries*>::operator[](int) [13]
+-----------------------------------------------
+                0.00    0.00     968/18309       BinaryHeap<Huffman*>::deleteMin() [31]
+                0.00    0.00    3745/18309       BinaryHeap<Huffman*>::insert(Huffman* const&) [23]
+                0.00    0.00   13596/18309       BinaryHeap<Huffman*>::percolateDown(int) [30]
+[14]     0.0    0.00    0.00   18309         Vector<Huffman*>::operator[](int) [14]
+-----------------------------------------------
+                0.00    0.00    4995/4995        Huffman::getCode(int, unsigned int*) [33]
+[15]     0.0    0.00    0.00    4995         Huffman::check(int) [15]
+-----------------------------------------------
+                0.00    0.00     484/970         BinaryHeap<Tries*>::deleteMin() [29]
+                0.00    0.00     486/970         BinaryHeap<Tries*>::findMin() const [18]
+[16]     0.0    0.00    0.00     970         BinaryHeap<Tries*>::isEmpty() const [16]
+-----------------------------------------------
+                0.00    0.00     484/970         BinaryHeap<Huffman*>::deleteMin() [31]
+                0.00    0.00     486/970         BinaryHeap<Huffman*>::findMin() const [19]
+[17]     0.0    0.00    0.00     970         BinaryHeap<Huffman*>::isEmpty() const [17]
+-----------------------------------------------
+                0.00    0.00     486/486         Decoder::decode(unsigned char const*, int, unsigned char*, int*) [2]
+[18]     0.0    0.00    0.00     486         BinaryHeap<Tries*>::findMin() const [18]
+                0.00    0.00     486/970         BinaryHeap<Tries*>::isEmpty() const [16]
+                0.00    0.00     486/486         Vector<Tries*>::operator[](int) const [20]
+-----------------------------------------------
+                0.00    0.00     486/486         Encoder::encode(unsigned char const*, int, unsigned char*, int*) [3]
+[19]     0.0    0.00    0.00     486         BinaryHeap<Huffman*>::findMin() const [19]
+                0.00    0.00     486/970         BinaryHeap<Huffman*>::isEmpty() const [17]
+                0.00    0.00     486/486         Vector<Huffman*>::operator[](int) const [21]
+-----------------------------------------------
+                0.00    0.00     486/486         BinaryHeap<Tries*>::findMin() const [18]
+[20]     0.0    0.00    0.00     486         Vector<Tries*>::operator[](int) const [20]
+-----------------------------------------------
+                0.00    0.00     486/486         BinaryHeap<Huffman*>::findMin() const [19]
+[21]     0.0    0.00    0.00     486         Vector<Huffman*>::operator[](int) const [21]
+-----------------------------------------------
+                0.00    0.00     485/485         Decoder::decode(unsigned char const*, int, unsigned char*, int*) [2]
+[22]     0.0    0.00    0.00     485         BinaryHeap<Tries*>::insert(Tries* const&) [22]
+                0.00    0.00    3745/18309       Vector<Tries*>::operator[](int) [13]
+                0.00    0.00     485/485         BinaryHeap<Tries*>::isFull() const [24]
+-----------------------------------------------
+                0.00    0.00     485/485         Encoder::encode(unsigned char const*, int, unsigned char*, int*) [3]
+[23]     0.0    0.00    0.00     485         BinaryHeap<Huffman*>::insert(Huffman* const&) [23]
+                0.00    0.00    3745/18309       Vector<Huffman*>::operator[](int) [14]
+                0.00    0.00     485/485         BinaryHeap<Huffman*>::isFull() const [25]
+-----------------------------------------------
+                0.00    0.00     485/485         BinaryHeap<Tries*>::insert(Tries* const&) [22]
+[24]     0.0    0.00    0.00     485         BinaryHeap<Tries*>::isFull() const [24]
+                0.00    0.00     485/485         Vector<Tries*>::size() const [26]
+-----------------------------------------------
+                0.00    0.00     485/485         BinaryHeap<Huffman*>::insert(Huffman* const&) [23]
+[25]     0.0    0.00    0.00     485         BinaryHeap<Huffman*>::isFull() const [25]
+                0.00    0.00     485/485         Vector<Huffman*>::size() const [27]
+-----------------------------------------------
+                0.00    0.00     485/485         BinaryHeap<Tries*>::isFull() const [24]
+[26]     0.0    0.00    0.00     485         Vector<Tries*>::size() const [26]
+-----------------------------------------------
+                0.00    0.00     485/485         BinaryHeap<Huffman*>::isFull() const [25]
+[27]     0.0    0.00    0.00     485         Vector<Huffman*>::size() const [27]
+-----------------------------------------------
+                0.00    0.00     484/484         BinaryHeap<Tries*>::deleteMin() [29]
+[28]     0.0    0.00    0.00     484         BinaryHeap<Tries*>::percolateDown(int) [28]
+                0.00    0.00   13596/18309       Vector<Tries*>::operator[](int) [13]
+-----------------------------------------------
+                0.00    0.00     484/484         Decoder::decode(unsigned char const*, int, unsigned char*, int*) [2]
+[29]     0.0    0.00    0.00     484         BinaryHeap<Tries*>::deleteMin() [29]
+                0.00    0.00     968/18309       Vector<Tries*>::operator[](int) [13]
+                0.00    0.00     484/970         BinaryHeap<Tries*>::isEmpty() const [16]
+                0.00    0.00     484/484         BinaryHeap<Tries*>::percolateDown(int) [28]
+-----------------------------------------------
+                0.00    0.00     484/484         BinaryHeap<Huffman*>::deleteMin() [31]
+[30]     0.0    0.00    0.00     484         BinaryHeap<Huffman*>::percolateDown(int) [30]
+                0.00    0.00   13596/18309       Vector<Huffman*>::operator[](int) [14]
+-----------------------------------------------
+                0.00    0.00     484/484         Encoder::encode(unsigned char const*, int, unsigned char*, int*) [3]
+[31]     0.0    0.00    0.00     484         BinaryHeap<Huffman*>::deleteMin() [31]
+                0.00    0.00     968/18309       Vector<Huffman*>::operator[](int) [14]
+                0.00    0.00     484/970         BinaryHeap<Huffman*>::isEmpty() const [17]
+                0.00    0.00     484/484         BinaryHeap<Huffman*>::percolateDown(int) [30]
+-----------------------------------------------
+                0.00    0.00     256/256         Decoder::decode(unsigned char const*, int, unsigned char*, int*) [2]
+[32]     0.0    0.00    0.00     256         Tries::Tries(int, int, Tries*, Tries*) [32]
+-----------------------------------------------
+                                3210             Huffman::getCode(int, unsigned int*) [33]
+                0.00    0.00     256/256         Encoder::encode(unsigned char const*, int, unsigned char*, int*) [3]
+[33]     0.0    0.00    0.00     256+3210    Huffman::getCode(int, unsigned int*) [33]
+                0.00    0.00    4995/4995        Huffman::check(int) [15]
+                                3210             Huffman::getCode(int, unsigned int*) [33]
+-----------------------------------------------
+                0.00    0.00     256/256         Encoder::encode(unsigned char const*, int, unsigned char*, int*) [3]
+[34]     0.0    0.00    0.00     256         Huffman::Huffman(int, int, Huffman*, Huffman*) [34]
+-----------------------------------------------
+                0.00    0.00     230/230         Decoder::decode(unsigned char const*, int, unsigned char*, int*) [2]
+[35]     0.0    0.00    0.00     230         BinaryHeap<Tries*>::getSize() [35]
+-----------------------------------------------
+                0.00    0.00     230/230         Encoder::encode(unsigned char const*, int, unsigned char*, int*) [3]
+[36]     0.0    0.00    0.00     230         BinaryHeap<Huffman*>::getSize() [36]
+-----------------------------------------------
+                0.00    0.00     229/229         Decoder::decode(unsigned char const*, int, unsigned char*, int*) [2]
+[37]     0.0    0.00    0.00     229         Tries::Tries(Tries*, Tries*) [37]
+-----------------------------------------------
+                0.00    0.00     229/229         Encoder::encode(unsigned char const*, int, unsigned char*, int*) [3]
+[38]     0.0    0.00    0.00     229         Huffman::Huffman(Huffman*, Huffman*) [38]
+-----------------------------------------------
+                0.00    0.00       1/2           std::operator&=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [60]
+                0.00    0.00       1/2           std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [59]
+[39]     0.0    0.00    0.00       2         std::operator&(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [39]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [77]
+[40]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN7DecoderC2Ev [40]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [43]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [77]
+[41]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN7EncoderC2Ev [41]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [44]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [77]
+[42]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN8CPUTimerC2Ev [42]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [45]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN7DecoderC2Ev [40]
+[43]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [43]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN7EncoderC2Ev [41]
+[44]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [44]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN8CPUTimerC2Ev [42]
+[45]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [45]
+-----------------------------------------------
+                0.00    0.00       1/1           Decoder::decode(unsigned char const*, int, unsigned char*, int*) [2]
+[46]     0.0    0.00    0.00       1         BinaryHeap<Tries*>::BinaryHeap(int) [46]
+                0.00    0.00       1/1           Vector<Tries*>::Vector(int) [50]
+-----------------------------------------------
+                0.00    0.00       1/1           Decoder::decode(unsigned char const*, int, unsigned char*, int*) [2]
+[47]     0.0    0.00    0.00       1         BinaryHeap<Tries*>::~BinaryHeap() [47]
+                0.00    0.00       1/1           Vector<Tries*>::~Vector() [51]
+-----------------------------------------------
+                0.00    0.00       1/1           Encoder::encode(unsigned char const*, int, unsigned char*, int*) [3]
+[48]     0.0    0.00    0.00       1         BinaryHeap<Huffman*>::BinaryHeap(int) [48]
+                0.00    0.00       1/1           Vector<Huffman*>::Vector(int) [52]
+-----------------------------------------------
+                0.00    0.00       1/1           Encoder::encode(unsigned char const*, int, unsigned char*, int*) [3]
+[49]     0.0    0.00    0.00       1         BinaryHeap<Huffman*>::~BinaryHeap() [49]
+                0.00    0.00       1/1           Vector<Huffman*>::~Vector() [53]
+-----------------------------------------------
+                0.00    0.00       1/1           BinaryHeap<Tries*>::BinaryHeap(int) [46]
+[50]     0.0    0.00    0.00       1         Vector<Tries*>::Vector(int) [50]
+-----------------------------------------------
+                0.00    0.00       1/1           BinaryHeap<Tries*>::~BinaryHeap() [47]
+[51]     0.0    0.00    0.00       1         Vector<Tries*>::~Vector() [51]
+-----------------------------------------------
+                0.00    0.00       1/1           BinaryHeap<Huffman*>::BinaryHeap(int) [48]
+[52]     0.0    0.00    0.00       1         Vector<Huffman*>::Vector(int) [52]
+-----------------------------------------------
+                0.00    0.00       1/1           BinaryHeap<Huffman*>::~BinaryHeap() [49]
+[53]     0.0    0.00    0.00       1         Vector<Huffman*>::~Vector() [53]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[54]     0.0    0.00    0.00       1         Decoder::Decoder() [54]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[55]     0.0    0.00    0.00       1         Encoder::Encoder() [55]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[56]     0.0    0.00    0.00       1         Encoder::~Encoder() [56]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[57]     0.0    0.00    0.00       1         CPUTimer::cur_CPUTime() [57]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[58]     0.0    0.00    0.00       1         CPUTimer::CPUTimer() [58]
+-----------------------------------------------
+                0.00    0.00       1/1           std::dec(std::ios_base&) [69]
+[59]     0.0    0.00    0.00       1         std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [59]
+                0.00    0.00       1/1           std::operator~(std::_Ios_Fmtflags) [61]
+                0.00    0.00       1/1           std::operator&=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [60]
+                0.00    0.00       1/2           std::operator&(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [39]
+                0.00    0.00       1/1           std::operator|=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [62]
+-----------------------------------------------
+                0.00    0.00       1/1           std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [59]
+[60]     0.0    0.00    0.00       1         std::operator&=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [60]
+                0.00    0.00       1/2           std::operator&(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [39]
+-----------------------------------------------
+                0.00    0.00       1/1           std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [59]
+[61]     0.0    0.00    0.00       1         std::operator~(std::_Ios_Fmtflags) [61]
+-----------------------------------------------
+                0.00    0.00       1/1           std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [59]
+[62]     0.0    0.00    0.00       1         std::operator|=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [62]
+                0.00    0.00       1/1           std::operator|(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [63]
+-----------------------------------------------
+                0.00    0.00       1/1           std::operator|=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [62]
+[63]     0.0    0.00    0.00       1         std::operator|(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [63]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+  [40] _GLOBAL__sub_I__ZN7DecoderC2Ev (decoder.cpp) [32] Tries::Tries(int, int, Tries*, Tries*) [58] CPUTimer::CPUTimer()
+  [41] _GLOBAL__sub_I__ZN7EncoderC2Ev (encoder.cpp) [50] Vector<Tries*>::Vector(int) [24] BinaryHeap<Tries*>::isFull() const
+  [42] _GLOBAL__sub_I__ZN8CPUTimerC2Ev (encoderRunner.cpp) [51] Vector<Tries*>::~Vector() [18] BinaryHeap<Tries*>::findMin() const
+  [43] __static_initialization_and_destruction_0(int, int) (decoder.cpp) [13] Vector<Tries*>::operator[](int) [16] BinaryHeap<Tries*>::isEmpty() const
+  [44] __static_initialization_and_destruction_0(int, int) (encoder.cpp) [52] Vector<Huffman*>::Vector(int) [25] BinaryHeap<Huffman*>::isFull() const
+  [45] __static_initialization_and_destruction_0(int, int) (encoderRunner.cpp) [53] Vector<Huffman*>::~Vector() [19] BinaryHeap<Huffman*>::findMin() const
+  [28] BinaryHeap<Tries*>::percolateDown(int) [14] Vector<Huffman*>::operator[](int) [17] BinaryHeap<Huffman*>::isEmpty() const
+  [22] BinaryHeap<Tries*>::insert(Tries* const&) [2] Decoder::decode(unsigned char const*, int, unsigned char*, int*) [26] Vector<Tries*>::size() const
+  [35] BinaryHeap<Tries*>::getSize() [54] Decoder::Decoder() [20] Vector<Tries*>::operator[](int) const
+  [29] BinaryHeap<Tries*>::deleteMin() [4] Encoder::add(unsigned int*, unsigned char*, unsigned int&, int&, int&) [27] Vector<Huffman*>::size() const
+  [46] BinaryHeap<Tries*>::BinaryHeap(int) [3] Encoder::encode(unsigned char const*, int, unsigned char*, int*) [21] Vector<Huffman*>::operator[](int) const
+  [47] BinaryHeap<Tries*>::~BinaryHeap() [55] Encoder::Encoder() [59] std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags)
+  [30] BinaryHeap<Huffman*>::percolateDown(int) [56] Encoder::~Encoder() [60] std::operator&=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags)
+  [23] BinaryHeap<Huffman*>::insert(Huffman* const&) [12] Huffman::increaseFrequency() [39] std::operator&(std::_Ios_Fmtflags, std::_Ios_Fmtflags)
+  [36] BinaryHeap<Huffman*>::getSize() [15] Huffman::check(int) [61] std::operator~(std::_Ios_Fmtflags)
+  [31] BinaryHeap<Huffman*>::deleteMin() [33] Huffman::getCode(int, unsigned int*) [62] std::operator|=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags)
+  [48] BinaryHeap<Huffman*>::BinaryHeap(int) [38] Huffman::Huffman(Huffman*, Huffman*) [63] std::operator|(std::_Ios_Fmtflags, std::_Ios_Fmtflags)
+  [49] BinaryHeap<Huffman*>::~BinaryHeap() [34] Huffman::Huffman(int, int, Huffman*, Huffman*)
+  [37] Tries::Tries(Tries*, Tries*) [57] CPUTimer::cur_CPUTime()
